@@ -57,10 +57,13 @@ Workloads dbs are optimized for-
 ### Extract, Transform, Load (ETL)
 
 ### Dataflow
+
 **1. Data passing through databases:** (2 process can be on different systems, R/W from databases can be slow where user requires low latency)
+
 **2. Data passing through services using requests such as REST and ZRPC APIs (eg. POST/GET requests):** This is request-driven approach.
 REST = Representational State Transfer (request over netwroks)
 RPC = Remote Procedure Call (tries to make a call to a remote netwrok service)
+
 **3. Data passing through real-time transport like Apache Kafka and Amazon Kinesis:** Having a broker db where all services can broadcast their data. 
 A piece of data transport to real-time transport is called an event. This architecture is event-driven. Real-time transport is called event-bus (eg. pubsub eg Apache Kafka, Amazon Kinesis)
 
