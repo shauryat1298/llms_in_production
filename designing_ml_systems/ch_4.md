@@ -72,6 +72,26 @@ To minimize disagreement within annotators, clear definition of problem statemen
 - Semi-supervision is useful when no of training labels are limited.
 
 **Transfer Learning:**
+- Model developed for a task is reused as starting point for a model on a second task
+- Example, using pretrained models for downstream tasks
 
+**Active Learning:**
+- Also called query learning
+- Label samples that are most helpful to the model
+
+## Class Imbalance
+
+![alt text](../artifacts/class_imbalance.png)
+
+Class imbalance makes precidiction difficult-
+- class imbalance often means there's insuffient signal for your model to learn
+- model can be stuck to nonoptimal solution by exploiting simple heuristic
+- asymmetric costs of error
+
+### Handling Class Imbalance
+
+**Use the right eval metrics:** F1, Recall, Precison
+
+**Data-level methods:** Resampling
 
 
